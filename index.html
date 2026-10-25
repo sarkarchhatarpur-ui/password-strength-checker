@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Harsh's Cyber Lab - Password strength checker and cybersecurity awareness project.">
+  <title>Harsh's Cyber Lab | Password Checker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#">
+      <span class="brand-icon">🛡️</span>
+      <span>Harsh's <strong>Cyber Lab</strong></span>
+    </a>
+    <span class="project-tag">CYBER SECURITY PROJECT</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span class="live-dot"></span> YOUR PERSONAL SECURITY TOOL</div>
+      <h1>Check Your <span>Password</span> Strength</h1>
+      <p class="hero-text">
+        Create stronger passwords and learn simple ways to protect your online accounts.
+      </p>
+
+      <section class="checker card" aria-labelledby="checker-title">
+        <div class="section-heading">
+          <div>
+            <h2 id="checker-title">Password Analyzer</h2>
+            <p>Check your password strength instantly.</p>
+          </div>
+          <span class="lock-icon">🔒</span>
+        </div>
+
+        <label for="password">Enter a sample password</label>
+        <div class="password-field">
+          <input
+            id="password"
+            type="password"
+            placeholder="Type a sample password..."
+            autocomplete="off"
+            spellcheck="false"
+            autocapitalize="off"
+            aria-describedby="privacy-note"
+          >
+          <button id="togglePassword" class="show-btn" type="button"
+            aria-label="Show password" aria-pressed="false">Show</button>
+        </div>
+
+        <p class="privacy-note" id="privacy-note">
+          🔐 Your password is checked locally in this browser. It is not sent to a server or saved by this tool.
+        </p>
+
+        <div class="strength-header">
+          <span>Password strength</span>
+          <strong id="strengthText" aria-live="polite">Not checked</strong>
+        </div>
+        <div class="meter" role="progressbar" aria-label="Password strength"
+          aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="strengthMeter">
+          <div id="strengthBar" class="meter-fill"></div>
+        </div>
+
+        <div class="requirements">
+          <h3>Password checklist</h3>
+          <ul>
+            <li id="reqLength"><span class="check">○</span> At least 12 characters</li>
+            <li id="reqLower"><span class="check">○</span> Lowercase letter (a–z)</li>
+            <li id="reqUpper"><span class="check">○</span> Uppercase letter (A–Z)</li>
+            <li id="reqNumber"><span class="check">○</span> Number (0–9)</li>
+            <li id="reqSymbol"><span class="check">○</span> Special character (!, @, #...)</li>
+          </ul>
+        </div>
+
+        <div class="tips-box">
+          <h3>💡 Security tips</h3>
+          <ul id="securityTips" aria-live="polite">
+            <li>Use a long, unique password for each account.</li>
+            <li>Never share passwords or use personal details.</li>
+            <li>Enable two-factor authentication when available.</li>
+          </ul>
+        </div>
+
+        <p class="disclaimer">
+          This is an educational checker, not a guarantee that a password is unbreakable.
+        </p>
+      </section>
+    </section>
+
+    <section class="about card" id="about">
+      <div class="about-icon">💻</div>
+      <div>
+        <span class="small-label">ABOUT MY PROJECT</span>
+        <h2>Built by Harsh Richhariya</h2>
+        <p>
+          Harsh's Cyber Lab is a Cyber Information Security mini project
+          designed to teach users about password safety. It checks common
+          password characteristics and gives suggestions to improve them.
+        </p>
+        <div class="tech-list">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="safety-note">
+      <span>🛡️</span>
+      <p>
+        <strong>Stay cyber safe.</strong>
+        Never reuse passwords, and never enter your actual banking,
+        email or social media password into a demonstration tool.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Harsh's Cyber Lab</p>
+    <p>Designed &amp; Developed by <strong>Harsh Richhariya</strong></p>
+    <p class="footer-subtitle">Cyber Information Security Mini Project</p>
+  </footer>
+</body>
+</html>
